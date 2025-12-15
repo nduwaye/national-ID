@@ -1,0 +1,238 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e9f0ff, #d9e4ff);
+  padding: 20px;
+  color: #1a1a1a;
+  animation: fadeIn 1s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+nav {
+  background: #003b9b;
+  padding: 15px 20px;
+  border-radius: 12px;
+  display: flex;
+  gap: 25px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+  animation: fadeIn 1.2s ease;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+  transition: 0.3s;
+}
+nav a:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+.hero {
+  text-align: center;
+  margin: 60px auto;
+  max-width: 700px;
+  animation: fadeIn 1.2s ease;
+}
+
+.hero h1 {
+  font-size: 38px;
+  color: #003088;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 28px;
+}
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.btn {
+  padding: 14px 22px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.primary {
+  background: #0048c8;
+  color: white;
+  box-shadow: 0 5px 20px rgba(0,72,200,0.4);
+}
+
+.primary:hover {
+  transform: scale(1.06);
+}
+
+.secondary {
+  background: white;
+  border: 2px solid #0048c8;
+  color: #0048c8;
+}
+
+.secondary:hover {
+  background: #0048c8;
+  color: white;
+  transform: scale(1.06);
+}
+.features {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.features h2 {
+  color: #003088;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  background: #f2f7ff;
+}
+.card h3 {
+  color: #003b9b;
+  margin-bottom: 10px;
+}
+.stats {
+  text-align: center;
+  margin-top: 70px;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+  max-width: 700px;
+  margin: auto;
+}
+.stat-box {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 5px
+}
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+input:focus, select:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 5px rgba(59,130,246,0.5);
+}
+button {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+.success {
+  background: #d1fae5;
+  color: #065f46;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+footer {
+  width: fit-content;      
+  margin: 40px auto 0 auto; 
+  padding: 12px 20px;       
+  background: #003b9b;     
+  color: white;             
+  border-radius: 10px;      
+  font-size: 14px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+footer {
+  background: #003b9b;
+  color: white;
+  padding: 20px 15px;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 40px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+footer .footer-content p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+footer .footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+footer .footer-links li {
+  margin: 5px 10px;
+}
+footer .footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+}
+footer .footer-links a:hover {
+  color: #60a5fa;
+  transform: scale(1.05);
+}
+footer .social-icons {
+  margin-top: 12px;
+}
+footer .social-icons a {
+  font-size: 22px;
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s, color 0.3s;
+}
+footer .social-icons a:hover {
+  color: #60a5fa;
+  transform: scale(1.2);
+}
